@@ -1,0 +1,215 @@
+<!doctype>
+<html>
+<head>
+<style>
+*{
+margin:0;
+padding:0;
+}
+.wrapper{
+width:1200;
+height:auto;
+min-height:800px;
+margin:0 auto;
+background-color:grey;
+}
+.bar{
+width:1200;
+height:80px;
+background-color:black;
+margin:0 auto;
+display:flex;
+position:sticky;
+top:0;
+z-index:3;
+}
+.logo_img{
+  width:40px;
+  height:80px;
+  float:left;
+}
+div.logo_img img{
+width:40px;
+height:60px;
+margin-left:5px;
+padding:10px;
+transform:rotate(40deg);
+}
+.logo_text{
+width:250px;
+height:80px;
+margin-left:15px;
+font-family:montserrat;
+font-size:20px;
+font-weight:bold;
+padding:30px 0px 0px 15px;
+color:white;
+}
+.time{
+height:80px;
+width:130px;
+font-family:open sans;
+font-size:10px;
+font-weight:simple;
+color:white;
+margin-left:150px;
+padding:30px 0px 0px 15px;
+}
+.num{
+width:80px;
+height:80px;
+font-family:lato;
+font-size:10px;
+font-weight:simple;
+color:white;
+margin-left:10px;
+margin-top:10px;
+padding:30px 0px 30px 15px;
+}
+div.num a{
+text-decoration:none;
+color:white;
+}
+.call-now-btn{
+width:75px;
+height:15px;
+font-family:arial;
+background-color:black;
+font-size:15px;
+font-weight:bold;
+border:2px solid white;
+padding:15px 15px;
+text-align:center;
+margin:15px;
+margin-left:350px;
+}
+div.call-now-btn a{
+text-decoration:none;
+color:white;
+}
+.feartures{
+width:1200px;
+min-height:800px;
+background-image:url("bg_img.jpg");
+
+}
+.adv_text{
+width:1200px;
+height:100px;
+font-family:oswald;
+font-size:80px;
+font-weight:simple;
+position:absolute;
+color:white;
+text-align:center;
+margin:0 auto;
+top:200px;
+z-index:3;
+}
+.rows{
+width:800px;
+min-height:350px;
+display:flex;
+gap:20px;
+padding:15px;
+justify-content:center;
+margin:0 auto;
+}
+.box{
+flex:1;
+min-height:350px;
+background-color:white;
+border:1px solid white;
+border-radius:5px;
+position:relative;
+z-index:3;
+top:250px;
+}
+div.box{
+font-size:10px;
+}
+.box_img{
+width:276px;
+height:160px;
+border-radius:5px;
+top:0;
+}
+h1{
+width:220px;
+height:20px;
+font-family:arial;
+font-size:18px;
+font-weight:simple;
+padding:15px;
+top:10px;
+margin:0 auto;
+color:black;
+margin-left:5px;
+}
+.content{
+width:220px;
+height:80px;
+font-family:arial;
+font-size:12px;
+font-weight:simple;
+padding:0px 15px 0px 15px;
+margin:0 auto;
+color:black;
+margin-left:5px;
+}
+.read-more-btn{
+width:70px;
+height:15px;
+background-color:white;
+font-size:12px;
+font-weight:bold;
+border:1px solid #3B78E3;
+padding:15px 15px 15px 15px;
+text-align:center;
+margin:0px 20px ;
+margin-left:20px;
+}
+.read-more-btn a{
+text-decoration:none;
+color:#3B78E3;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+<section class="bar">
+     <div class="logo_img"><img src="Logo.jpg"/></div>
+     <div class="logo_text">Simple HTML5 Template</div>
+     <div class="time">MON - SAT: 7:00-8:00 <br> SUNDAY : CLOSED</div>
+	 <div class="num"><a href="">+1-0000000000</a></div>
+	 <div class="call-now-btn"><a href="">Call Now</a><div>
+</section>
+<section class="feartures">
+	 <div class="adv_text">Our Advantage</div>
+	 <div class="rows">
+	   <!-- box 1 -->
+	   <div class="box">
+	      <img class="box_img" src="img1.jpg"/>
+	      <h1>Best Masters</h1>
+		  <p class="content">We eternally accept sufficient means to make our business manner quicker and relaible and provide you a loyal result.<p>
+		  <p class="read-more-btn"><a href="">Read more</a>
+	   </div>
+	   <!-- box 2 -->
+	   <div class="box">
+	      <img class="box_img" src="img2.jpg"/>
+		  <h1>Modern Tool</h1>
+		  <p class="content">Our crew can assist with administration wind-downs, as we possess wisdom in dealing with the problems that arise.<p>
+		  <p class="read-more-btn"><a href="">Read more</a>
+	   </div>
+	   <!-- box 3 -->
+	   <div class="box">
+	      <img class="box_img" src="img3.jpg"/>
+		  <h1>Your Design</h1>
+		  <p class="content">Find a tact for your following orders. Our purpose is to advise your manners from the view you don't have.<p>
+		  <p class="read-more-btn"><a href="">Read more</a>
+	   </div>
+     </div> 
+</section>
+</div>
+</body>
+</html>
