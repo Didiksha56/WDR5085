@@ -1,26 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Elegant Luxury Watch</title>
+  
+<style>
 
-    <title>Elegant Luxury Watch</title>
-
-    <style>
-
-        * {
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f5f7f7;
-            color: #123b5b;
+		.wrapper{
+		   width:1200px;
+		   height:auto;
+		   min-height:800px;
+           margin:0 auto;
+           background-color:#f5f7f7;
+		}
+        .bar{
+           width:1200px;
+           height:60px;
+		   background-color:#03051C;
+		   margin:0 auto;
+		   margin-top:40px;
+		   display:flex;
+		   position:sticky;
+		   z-index:3;
         }
+		.bar_text{
+		   font-family:Arial;
+		   color:#f5f7f7;
+		   font-size:22px;
+		   font-style:bold;
+		   padding:20px;
+		}
+		.search_bar{
+		   min-width:400px;
+		   height:25px;
+		   display:inline-block;
+		   border-radius:3px;
+		   font-family:Helvetica;
+		   font-style:simple;
+		   font-size:15px;
+		   padding:5px;
+		   background-color:#f5f7f7;
+		   color:#03051C;
+		   margin:20px;
+		}
+		.search_icon img{
+		  width:20px;
+		  height:20px;
+		  background:#03051C;
+		  border:none;
+		  margin:0 auto;
+          margin-top:20px;
+		  color:#f5f7f7;
+		}
+        .menu{
+		  width:400px;
+		  height:60px;
+		  justify-content:space-between;
+		  align-item:center;
+		  background-color:none;
+		  display:inline-block;
+		  padding:20px 0;
+		  margin-left:30px;
 
-        .page {
+		}
+        ul{
+		  list-style-type:none;
+		  display:flex;
+		  flex-direction:row;
+		  justify-content:space-between;
+		  align-item:center;	
+          padding:0;
+		  margin:0;
+          		  
+		}
+		ul li a{
+		  display:inline-block;
+		  font-family:sans-serif;
+		  font-size:15px;
+		  font-style:simple;
+		  text-decoration:none;
+		  color:#f5f7f7;
+		}
+		.page {
             min-height: 100vh;
             padding: 25px 7%;
             display: flex;
@@ -95,7 +160,7 @@
             line-height: 1.15;
             font-weight: 750;
             margin-bottom: 9px;
-            color: #123b5b;
+            color: #03051C;
         }
 
         .brand {
@@ -169,7 +234,7 @@
             height: 36px;
             border: none;
             border-radius: 3px;
-            background: #173e5d;
+            background: #03051C;
             color: white;
             font-size: 22px;
             cursor: pointer;
@@ -192,7 +257,7 @@
             height: 52px;
             border: none;
             border-radius: 7px;
-            background: #173e5d;
+            background:#03051C;
             color: white;
             font-size: 17px;
             font-weight: bold;
@@ -200,7 +265,7 @@
         }
 
         .bag:hover {
-            background: #214c6c;
+           opacity: 0.9;
         }
 
         /* OFFER BOX */
@@ -231,7 +296,7 @@
         .signup {
             border: none;
             border-radius: 4px;
-            background: #173e5d;
+            background:#03051C;
             color: white;
             padding: 10px 23px;
             font-weight: bold;
@@ -241,50 +306,25 @@
         .signup:hover {
             opacity: 0.9;
         }
-
-        /* MOBILE */
-
-        @media (max-width: 850px) {
-
-            .page {
-                padding: 20px;
-            }
-
-            .product {
-                grid-template-columns: 1fr;
-            }
-
-            .main-image {
-                height: 480px;
-            }
-        }
-
-        @media (max-width: 500px) {
-
-            .details h1 {
-                font-size: 29px;
-            }
-
-            .main-image {
-                height: 360px;
-            }
-
-            .thumbnails {
-                gap: 8px;
-            }
-
-            .thumbnail {
-                width: 52px;
-                height: 65px;
-            }
-        }
-
-    </style>
+</style>
 </head>
-
 <body>
-
-    <main class="page">
+    <div class="wrapper">
+	<section class="bar">
+	  <div class="bar_text">TIMELESS WATCHES</div>
+	  <div class="search_bar">Search....</div>
+	  <div class="search_icon"><img src="img/search_icon.png" /></div>
+	  <div class="menu">
+	    <ul>
+		<li><a href="">Shop</a></li>
+		<li><a href="">New Arrivals</a></li>
+		<li><a href="">Brands</a></li>
+		<li><a href="">About</a></li>
+		<li><a href="">Contact</a></li>
+		</ul>
+		</div>
+	</section>
+	<main class="page">
 
         <section class="product">
 
@@ -418,5 +458,6 @@
             }
         }
     </script>
+	</div>
 </body>
 </html>
